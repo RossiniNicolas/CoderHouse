@@ -1,0 +1,648 @@
+/*Header & footer css*/
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*
+{
+    font-family:Calibri;
+}
+
+header
+{
+    margin: 0%;
+    height: 75px;
+    background-color: #CB552C;
+    border: 12px solid #CB552C;
+    width: 100%;
+    outline: 8px solid #CB552C;
+    display: flex;
+    place-items: center normal;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+header #logo 
+{
+    max-width: 200px;
+    position: absolute;
+    padding: 2%; 
+}
+
+
+header nav
+{
+    display: flex;
+    position: absolute;
+    left: 60%;
+    place-items: center center;
+}
+
+#toggle, #burguerButtonIcon
+{
+    display: none;
+}
+
+header nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+header nav ul li
+{
+    display: flex;
+    margin: 0 6px 0 6px;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li a
+{
+    display: inline;
+    color: black;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+header nav ul li a:hover
+{
+    color: white;
+    transform: scale(1.1);
+}
+
+footer
+{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #CB552C;
+    border: 12px solid #CB552C;
+    outline: 8px solid #CB552C;
+    color: white;
+}
+footer p
+{
+    text-align: center;
+}
+footer hr
+{
+    width: 12%;
+    color: white;
+}
+
+footer #rrss
+{
+    position:relative;
+    display: inline;
+    left: 45%;
+}
+
+
+footer #rrss i
+{
+    color: white;
+    margin: 0 1% 0 1%;
+    transition: all 500ms;
+}
+
+
+footer #rrss i:hover
+{
+    color: black;
+    transform: scale(1.3);
+}
+
+/*Index css*/
+
+.intro
+{
+    place-content: center;
+    padding: 0;
+    display: flex;
+    position: relative;
+    width: 110%;
+    height: 550px;
+    background-image: url(media/R.jpg);
+    background-position: center center;
+    transition: 500ms;
+}
+
+.tex{
+    font-size: 65px;
+    font-family: tahoma;
+    font-weight: bolder;
+    color: white;  
+    transition: all 500ms;
+}
+
+.tex:hover
+{
+    color: rgb(253, 0, 0);
+    text-shadow: 0px 0px 12px rgb(255, 255, 255);
+}
+
+main div, section
+{
+    place-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main div h2, section h2
+{
+    text-align: center;
+}
+
+main div table
+{
+    width: 30%;
+    margin: 3%;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    border: 2px solid #CB552C;
+    border-radius: 8px;
+}
+
+.principal{
+    display: block;
+  position: relative;		
+  width: 200px;
+  margin: 0%;
+  padding: 0%;
+  
+}
+
+
+hr,section hr
+{
+    width: 12.5%;
+}
+
+main div table .Encabezado
+{
+    background-color: #CB552C;
+    color: white;
+    border: 2px solid #CB552C;
+    border-collapse: collapse;
+}
+
+
+main div table .Encabezado th
+{
+    border: 2px solid #CB552C;
+    outline: 3px solid #CB552C;
+    background-color: #CB552C;
+}
+
+iframe
+{
+    position: relative;
+    left: 30%;
+    border-radius: 10px;
+    border: none;
+}
+#galeriaDiv
+{
+    text-align: center;
+}
+
+.galeria{
+    transition: all 2s;
+    height: fit-content;
+    width: fit-content;
+    margin: 100px auto;
+    place-items: start center;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5px;
+    grid-template-areas:
+    "foto1 foto2 foto3"
+    "video video video";
+}
+
+.foto{
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 13px;
+}
+
+#foto1
+{
+    grid-area: foto1;
+    background-image: url(/media/1.jpeg);
+    width: 300px;
+    height: 400px;
+    transition: all 2s;
+}
+
+#foto1:hover{
+    transform: scale(1.2);
+    border-radius: 15%;
+}
+
+#foto2
+{
+    grid-area: foto2;
+    background-image: url(/media/2.jpeg);
+    width: 400px;
+    height: 300px;
+    transition: all 2s;
+}
+
+#foto2:hover{
+    transform: scale(1.2);
+    border-radius: 15%;
+}
+
+#foto3  
+{
+    grid-area: foto3;
+    height: 400px;
+    width: 300px;
+    background-image: url(/media/3.jpeg);
+    transition: all 2s;
+}
+
+#foto3:hover{
+    transform: scale(1.2);
+    border-radius: 15%;
+}
+
+#video
+{
+    grid-area: video;
+    margin-top: 2%;
+}
+
+#video video
+{
+    border-radius: 13px;
+}
+
+
+
+
+/*Bebida css*/
+
+.bebida 
+{
+    width: 100%;
+    outline: 20px solid;
+    height: max-content;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+#nacional
+{
+    outline-color: aquamarine;
+    background-color: aquamarine;
+    outline-color: solid aquamarine;
+}
+
+#importada
+{
+    outline-color: gold;
+    background-color: gold;
+    outline-color: solid gold;
+}
+
+#cerveza
+{
+    outline-color: goldenrod;
+    background-color: goldenrod;
+    outline-color: solid goldenrod;
+}
+
+#combos
+{
+    outline-color: purple;
+    background-color: purple;
+    outline-color: solid purple;
+}
+
+#combos h2
+{
+    color: gold;
+}
+
+#combos hr
+{
+    background-color: gold;
+    border-color: gold  ;
+}
+
+.bebida h2
+{
+    text-align: center;
+}
+
+.bebida hr
+{
+    width: 20%;
+    margin-bottom: 2%;
+}
+
+.bebida .gallery
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.bebida .gallery .card
+{
+    min-width: 105px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 1px -1px 25px rgba(255, 255, 255, 0.75);
+    transition: all 500ms;
+}
+
+.bebida .gallery .card .img
+{
+    text-align: center;
+    max-width: 100px;
+    max-height: 125px;
+}
+
+.bebida .gallery .card .img img
+{
+    justify-self: center;
+    max-width: 100px;
+    max-height: 125px;
+    position: relative;
+    z-index: 0;
+}
+
+.bebida .gallery .card .description
+{
+    background-color: white;
+    height: 38%;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.bebida .gallery .card .description p
+{
+    text-align: end;
+    font-size: medium;
+}
+
+/*Contacto css*/
+
+#contacto
+{
+    display: grid;
+    margin: 3%;
+    height: 350px;
+}
+
+#contacto form
+{
+    background-color: #DF673A;   
+    border: 3px solid #DF673A;
+    border-radius: 7.5px;
+    padding: 2%;
+    height: 320px;
+}
+
+#contacto form div
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#contacto form div .container
+{
+    margin-top: 1.3%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.textInput
+{
+    text-align: center;
+    margin-top: 3%;
+    width: 180px;
+    background-color: #ffe9e1;
+    border : 2px solid #ffe9e1;
+    border-radius: 15px;
+}
+
+#contacto form #messageContainer
+{
+    position: relative;
+    top: 15px;
+    display: grid;
+    padding: 0% 0% 6% 0%;
+
+}
+
+#contacto form #messageContainer #mensaje
+{
+    position: relative;
+    top:40px;
+    text-align: justify;
+    width: 450%;
+    height: 250%;   
+}
+
+#contacto form #checkboxContainer
+{
+    position: relative;
+    top: 5px;
+    display: grid;
+    
+}
+
+#contacto form #ingresar
+{
+    position: relative;
+    top: 5px;
+    left: 44.75%;
+    width: 10%;
+    height: 7.5%
+}
+
+#footerContacto
+{
+    position: fixed;
+    bottom: 0%;
+}
+
+/* efectos */
+.gallery .card:hover{
+        transform: scale(1.2);
+}
+
+@media (max-width : 600px)
+{
+    header
+    {
+        height: 190px;
+        flex-direction: column;
+    }
+
+           
+
+    #burguerButtonIcon
+    {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 1;
+        transform: scale(1.5);
+        height: 30px;        
+        width: 30px;
+    }
+
+    #toggle
+    {
+        display: flex;
+        right: 40px;
+        top: 20px;
+        position: absolute;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        opacity: 0.3;
+    }
+
+    header nav ul
+    {
+        display: flex;
+        position: relative;
+        left: -90%;
+        top: 60px;
+        flex-direction: column;
+    }
+    
+    #toggle:checked + header nav ul
+    {
+        display: flex;
+    } 
+    
+    .tex{
+        font-size: 35px;
+        font-family: tahoma;
+        font-weight: bolder;
+        color: white;  
+        transition: all 500ms;
+    }
+
+    main div table  
+    {
+        position: relative;
+        left: 25%;
+    }
+
+    #ubicacion iframe
+    {
+        position: relative;
+        left: 3%;
+        width: 95%;
+    }
+
+    .galeria
+    {
+        margin-bottom: 0%;
+        grid-template-columns: repeat(1,500px);
+        grid-template-rows: repeat(4,440px);
+        place-content: center;
+        gap: 0px;
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "video"
+        ;
+    }
+
+    .foto
+    {
+        max-width: 300px;
+    }
+    
+    #video
+    {
+        position: relative;
+        left: -35%;
+        transition: none;
+    }
+
+    #video video
+    {
+        transform: scale(0.7);
+    }
+
+    #galeriaDiv{
+        position:relative; 
+    }
+
+    footer p
+    {
+        font-size: small;
+    }
+    
+    footer #rrss
+    {
+        left: 36.5%;
+    }
+
+    #contacto
+    {
+        margin-bottom: 175px;
+    }        
+
+    form
+    {
+        max-height: 450px;
+    }
+    
+    form #messageContainer
+    {
+        position: relative;
+        overflow-y: hidden;
+        height: 100px;
+    }
+    
+    form #messageContainer label
+    {
+        position: relative;
+        top: 10%;
+    }
+
+    form #messageContainer #mensaje
+    {
+        height: 50px;
+        overflow-y: hidden;
+    }
+
+    #contacto form #checkboxContainer
+    {
+        top:5%;
+    }
+    
+    #contacto form #ingresar
+    {
+        top: 8%;
+        left: 43%;
+        width: 50px;
+    }
+}
