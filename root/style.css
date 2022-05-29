@@ -26,13 +26,51 @@ header
     z-index: 1;
 }
 
-header #logo 
+header .head{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+ }
+
+header .head #logo 
 {
     max-width: 200px;
     position: absolute;
-    padding: 2%; 
+    top: -22px;
+    left: 10px;
 }
 
+header .head #sub
+{
+    position : absolute;
+    left: 10px;
+    top: 20px;
+    font-size: smaller;
+    width: max-content;
+    color: #ffe9e1;
+    animation: pepito 3s linear infinite;
+}
+
+@keyframes pepito
+{
+    0%{
+        transform: scale(1);
+        text-shadow: 0 0 2em red;
+    }   
+    
+    50%{
+        transform: scale(1.2);
+        text-shadow: 0 0 1em transparent;
+        color :white;
+    }
+    100%
+    {
+        transform: scale(1);
+        text-shadow: 0 0 2em red;
+    }
+}
 
 header nav
 {
@@ -58,6 +96,7 @@ header nav ul
 header nav ul li
 {
     display: flex;
+    width: fit-content;
     margin: 0 6px 0 6px;
     list-style: none;
     text-align: center;
@@ -133,6 +172,7 @@ footer #rrss i:hover
     background-position: center center;
     transition: 500ms;
 }
+
 
 .tex{
     font-size: 65px;
@@ -224,7 +264,7 @@ iframe
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 5px;
+    gap: 5px;   
     grid-template-areas:
     "foto1 foto2 foto3"
     "video video video";
@@ -490,7 +530,7 @@ iframe
         transform: scale(1.2);
 }
 
-@media (max-width : 600px)
+@media (max-width : 415px)
 {
     header
     {
@@ -498,7 +538,33 @@ iframe
         flex-direction: column;
     }
 
-           
+    header .head{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        left: 0%;
+        top: 10%;
+    }
+    
+    header .head #logo 
+    {
+        max-width: 200px;
+        position: absolute;
+        top: -22px;
+        left: -80px;
+    }
+    
+    header .head #sub
+    {
+        position : absolute;
+        left: -90px;
+        top: 20px;
+        font-size: smaller;
+        width: max-content;
+        color: #ffe9e1;
+    }       
 
     #burguerButtonIcon
     {
@@ -532,12 +598,13 @@ iframe
         top: 60px;
         flex-direction: column;
     }
+
     
-    #toggle:checked + header nav ul
+    header nav ul li
     {
-        display: flex;
-    } 
-    
+        width: max-content;
+    }
+
     .tex{
         font-size: 35px;
         font-family: tahoma;
@@ -549,7 +616,7 @@ iframe
     main div table  
     {
         position: relative;
-        left: 25%;
+        left: 15%;
     }
 
     #ubicacion iframe
@@ -562,6 +629,7 @@ iframe
     .galeria
     {
         margin-bottom: 0%;
+        justify-items: center;
         grid-template-columns: repeat(1,500px);
         grid-template-rows: repeat(4,440px);
         place-content: center;
@@ -645,4 +713,95 @@ iframe
         left: 43%;
         width: 50px;
     }
+}
+
+@media (min-width: 420px) and (max-width: 1300px)
+{ 
+    header .head{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        left: 0%;
+        top: 10%;
+    }
+    
+    header .head #logo 
+    {
+        max-width: 200px;
+        position: absolute;
+        top: -22px;
+        left: 10px;
+    }
+    
+    header .head #sub
+    {
+        position : absolute;
+        left: 10px;
+        top: 20px;
+        font-size: smaller;
+        width: max-content;
+        color: #ffe9e1;
+    }       
+   
+    header nav ul
+    {
+        display: flex;
+        position: relative;
+        /* left: -90%; */
+        top: 10px;
+        flex-direction:row;
+        left: -20%;
+    }
+    
+    header nav ul li
+    {
+        width: max-content;
+    }
+    .tex{
+        font-size: 45px;
+        font-family: tahoma;
+        font-weight: bolder;
+        color: white;  
+        transition: all 500ms;
+    }
+.galeria
+    {
+        margin-bottom: 0%;
+        justify-items: center;
+        grid-template-columns: repeat(1,500px);
+        grid-template-rows: repeat(4,440px);
+        place-content: center;
+        gap: 0px;
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "video"
+        ;
+    }
+    #video
+    {
+        position: relative;
+        transition: none;
+    }
+
+    #video video
+    {
+        transform: scale(0.7);
+    }
+    main div table  
+    {
+        position: relative;
+        left: 33%;
+    }
+
+    #ubicacion iframe
+    {
+        position: relative;
+        left: 15%;
+        width: 75%;
+    }
+
 }
