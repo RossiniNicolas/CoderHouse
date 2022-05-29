@@ -14,7 +14,7 @@ body
 header
 {
     margin: 0%;
-    height: 75px;
+    height: 85px;
     background-color: #CB552C;
     border: 12px solid #CB552C;
     width: 100%;
@@ -38,7 +38,7 @@ header .head #logo
 {
     max-width: 200px;
     position: absolute;
-    top: -22px;
+    top: -32px;
     left: 10px;
 }
 
@@ -50,10 +50,10 @@ header .head #sub
     font-size: smaller;
     width: max-content;
     color: #ffe9e1;
-    animation: pepito 3s linear infinite;
+    animation: breething 3s linear infinite;
 }
 
-@keyframes pepito
+@keyframes breething
 {
     0%{
         transform: scale(1);
@@ -125,6 +125,7 @@ footer
     border: 12px solid #CB552C;
     outline: 8px solid #CB552C;
     color: white;
+    z-index: 20;
 }
 footer p
 {
@@ -221,9 +222,12 @@ main div table
 }
 
 
-hr,section hr
+main hr,footer hr, #galeriaDiv hr,section hr
 {
+    position: relative;
+    left: 45%;
     width: 12.5%;
+    align-self: center;
 }
 
 main div table .Encabezado
@@ -241,7 +245,10 @@ main div table .Encabezado th
     outline: 3px solid #CB552C;
     background-color: #CB552C;
 }
-
+main div table .Contenido td
+{
+    border: 0.3px solid #eabbac;
+}
 iframe
 {
     position: relative;
@@ -254,80 +261,18 @@ iframe
     text-align: center;
 }
 
-.galeria{
-    transition: all 2s;
-    height: fit-content;
-    width: fit-content;
-    margin: 100px auto;
-    place-items: start center;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 5px;   
-    grid-template-areas:
-    "foto1 foto2 foto3"
-    "video video video";
-}
-
-.foto{
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 13px;
-}
-
-#foto1
+#galeriaDiv #carouselInterval
 {
-    grid-area: foto1;
-    background-image: url(/media/1.jpeg);
-    width: 300px;
-    height: 400px;
-    transition: all 2s;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 1%;
+    border-radius: 20px;
 }
 
-#foto1:hover{
-    transform: scale(1.2);
-    border-radius: 15%;
-}
-
-#foto2
+#galeriaDiv #carouselInterval .carousel-item img
 {
-    grid-area: foto2;
-    background-image: url(/media/2.jpeg);
-    width: 400px;
-    height: 300px;
-    transition: all 2s;
-}
-
-#foto2:hover{
-    transform: scale(1.2);
-    border-radius: 15%;
-}
-
-#foto3  
-{
-    grid-area: foto3;
-    height: 400px;
-    width: 300px;
-    background-image: url(/media/3.jpeg);
-    transition: all 2s;
-}
-
-#foto3:hover{
-    transform: scale(1.2);
-    border-radius: 15%;
-}
-
-#video
-{
-    grid-area: video;
-    margin-top: 2%;
-}
-
-#video video
-{
-    border-radius: 13px;
+    border-radius: 10px;
 }
 
 
@@ -530,11 +475,11 @@ iframe
         transform: scale(1.2);
 }
 
-@media (max-width : 415px)
+@media (max-width : 424px)
 {
     header
     {
-        height: 190px;
+        height: 220px;
         flex-direction: column;
     }
 
@@ -560,42 +505,18 @@ iframe
     {
         position : absolute;
         left: -90px;
-        top: 20px;
+        top: 30px;
         font-size: smaller;
         width: max-content;
         color: #ffe9e1;
     }       
-
-    #burguerButtonIcon
-    {
-        display: flex;
-        position: absolute;
-        right: 30px;
-        top: 30px;
-        z-index: 1;
-        transform: scale(1.5);
-        height: 30px;        
-        width: 30px;
-    }
-
-    #toggle
-    {
-        display: flex;
-        right: 40px;
-        top: 20px;
-        position: absolute;
-        z-index: 2;
-        width: 30px;
-        height: 30px;
-        opacity: 0.3;
-    }
 
     header nav ul
     {
         display: flex;
         position: relative;
         left: -90%;
-        top: 60px;
+        top: 70px;
         flex-direction: column;
     }
 
@@ -626,42 +547,14 @@ iframe
         width: 95%;
     }
 
-    .galeria
+    #galeriaDiv #carouselInterval
     {
-        margin-bottom: 0%;
-        justify-items: center;
-        grid-template-columns: repeat(1,500px);
-        grid-template-rows: repeat(4,440px);
-        place-content: center;
-        gap: 0px;
-        grid-template-areas:
-        "foto1"
-        "foto2"
-        "foto3"
-        "video"
-        ;
-    }
-
-    .foto
-    {
-        max-width: 300px;
-    }
-    
-    #video
-    {
+        width: 80%;
         position: relative;
-        left: -35%;
-        transition: none;
+        left: 10%;
+        margin-bottom: 3%;
     }
 
-    #video video
-    {
-        transform: scale(0.7);
-    }
-
-    #galeriaDiv{
-        position:relative; 
-    }
 
     footer p
     {
@@ -675,7 +568,8 @@ iframe
 
     #contacto
     {
-        margin-bottom: 175px;
+        height: fit-content;
+        margin-bottom: 200px;
     }        
 
     form
@@ -715,7 +609,7 @@ iframe
     }
 }
 
-@media (min-width: 420px) and (max-width: 1300px)
+@media (min-width: 425px) and (max-width: 1300px)
 { 
     header .head{
         width: fit-content;
@@ -731,7 +625,7 @@ iframe
     {
         max-width: 200px;
         position: absolute;
-        top: -22px;
+        top: -30px;
         left: 10px;
     }
     
