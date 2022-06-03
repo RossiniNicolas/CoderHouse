@@ -4,80 +4,103 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/style.css">
         <title>Tangalagua Disco - bebidas</title>
     </head>
 
     <body>
         <header>
-            <div class="head">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  
+              <div class="head">
                 <img id="logo" src="/media/logo.png" alt="logo">
                  <h2 id="sub">LA DISCO MAS FIESTERA AL AIRE LIBRE</h2>
                 </div>
-            <nav>
-                <ul>                   
-                    <li><a class="item" href="/index.html">Pantalla principal</a></li>
-                    <li><a class="item" href="contacto.html">Contacto</a></li>
-                    <li><a class="item" href="/index.html#fechas">Fechas</a></li>
-                    <li><a class="item" href="/index.html#ubicacion">Ubicación</a></li>
-                    <li><a class="item" href="/index.html#galeria">Galeria</a></li>
-                    <li><a class="item" href="#rrss">Redes Sociales</a></li>
+  
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>              
+              </div>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link"href="/index.html">Pagina principal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./bebidas.html">Bebidas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#fechas">Fechas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#ubicacion">Ubicación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#galeriaDiv">Galeria</a>
+                  </li>     
+                  <li class="nav-item">
+                    <a class="nav-link" href="#rrss">Redes Sociales</a>
+                  </li>     
                 </ul>
+              </div>
             </nav>
-        </header>
+        </header>   
        
         <div class="bebida" id="nacional">
             <h2>Bebida Nacional</h2>
             <hr>
-
-
             <div class="gallery">
-
-                <div class="card" id="fernet">
-
+                <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://www.stevesliquor.com.au/assets/img/products/Steves-2301011.png" alt="Fernet Branca">
                     </div>
-                    
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Fernet</h4>
-                        <p>$500</p>                    
+                        <p>$500.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
 
-                <div class="card" id="vodka">
-                    
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkrearmarket.com%2Fwp-content%2Fuploads%2F2020%2F12%2F5129DAN-VODKA-SERNOVA-BERRIES-X-700-CC.png&f=1&nofb=1" alt="Vodka Sernova">
                     </div>
-
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Vodka</h4>
-                        <p>$700</p>
+                        <p>$700.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
-                
-                <div class="card" id="gancia">
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://almacenfamily.com/productos/americano-gancia.png" alt="Gancia">
                     </div>
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Gancia</h4>
-                        <p>$700</p>
+                        <p>$400.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
-                
-                <div class="card" id="licor">
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.saq.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F10212736-1_1580594411.png%3Fquality%3D80%26fit%3Dbounds%26height%3D%26width%3D&f=1&nofb=1" alt="">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.saq.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F10212736-1_1580594411.png%3Fquality%3D80%26fit%3Dbounds%26height%3D%26width%3D&f=1&nofb=1" alt="">
                     </div>
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Licor de melón</h4>
-                        <p>$700</p>
+                        <p>$700.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
 
@@ -88,49 +111,48 @@
 
             <div class="gallery">
 
-                <div class="card" id="champagne">
-
+                <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://www.clos19.com/medias/?context=bWFzdGVyfGltYWdlc3wxNDQxMDA1fGltYWdlL3BuZ3xpbWFnZXMvaGRjL2hiNy84Nzk2NzAzMTYyMzk4LnBuZ3xmODVjNDhkYmU4YzQ0YzI1NDU0NWFjZTg0ODEyNjMyZTk0MDY3M2IwNjU1Zjk4NTRiNGNiMmZjNzc3OTJiMzg2" alt="Botella de champgne Moet & Chandon 950ml">
                     </div>
-                    
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Champagne</h4>
-                        <p>$1500</p>                    
+                        <p>$1,500.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
 
-                <div class="card" id="vodka">
-                    
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
-                        <img src="https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2018/09/106079-ABSOLUT-CITRON.png" alt="Vodka Absolut 1000ml">
-                    </div>
-
-                    <div class="description">
+                        <img src="https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2018/09/106079-ABSOLUT-CITRON.png" alt="Vodka Absolut 1000ml"></div>
+                    <div class="card-body">
                         <h4>Vodka</h4>
-                        <p>$2400</p>
+                        <p>$2700.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
-                
-                <div class="card" id="gin">
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftoddysknoxville.com%2Fcomponents%2Fcom_jshopping%2Ffiles%2Fimg_products%2Ffull_gordon-s-dry-gin.png&f=1&nofb=1" alt="">
                     </div>
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Gin</h4>
-                        <p>$600</p>
+                        <p>$600.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
-                
-                <div class="card" id="jaggermeister">
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pmacanada.com%2Fwp-content%2Fuploads%2Fproduct%2Fjagermeister-2016-lrg.png&f=1&nofb=1" alt="">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pmacanada.com%2Fwp-content%2Fuploads%2Fproduct%2Fjagermeister-2016-lrg.png&f=1&nofb=1" alt="">
                     </div>
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Jägermeister</h4>
-                        <p>$1200</p>
+                        <p>$1200.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
 
@@ -140,82 +162,79 @@
 
             <div class="gallery">
 
-                <div class="card" id="corona">
-
+                <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://www.stevesliquor.com.au/assets/img/products/Steves-1150104.png" alt="Cerveza Corona 35cl">
                     </div>
-                    
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Corona</h4>
-                        <p>$500</p>                    
+                        <p>$500.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
 
-                <div class="card" id="sol">
-                    
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://media.danmurphys.com.au/dmo/product/96151-1.png" alt="Cerveza Sol">
                     </div>
-
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Sol</h4>
-                        <p>$400</p>
+                        <p>$400.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
-                
-                <div class="card" id="brahma">
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="https://cdn-cosmos.bluesoft.com.br/products/7468973202815" alt="">
                     </div>
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Brahma</h4>
-                        <p>$300</p>
+                        <p>$300.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
-                
-                <div class="card" id="budweiser">
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
-                    <img src="https://media.danmurphys.com.au/dmo/product/1000004677-BUD-1.png" alt="">
+                        <img src="https://media.danmurphys.com.au/dmo/product/1000004677-BUD-1.png" alt="">
                     </div>
-                    <div class="description">
+                    <div class="card-body">
                         <h4>Budweiser</h4>
-                        <p>$400</p>
+                        <p>$400.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
+
             </div>
         </div>
 
         <div class="bebida" id="combos">
             <h2>Combos</h2>
             <hr>
-
-
             <div class="gallery">
 
-                <div class="card" id="smirnoff4speeds">
-
+                <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="/media/smirnoff.png" alt="smirnoff">
                     </div>
-                    
-                    <div class="description">
-                        <h4>Smirnoff + 4 speeds</h4>
-                        <p>$2500</p>                    
+                    <div class="card-body">
+                        <h4>Combo <br> Smirnoff</h4>
+                        <p>$2,500.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>
+                  </div>
 
-                <div class="card" id="champagne2speeds">
-                    
+                  <div class="card" style="width: 18rem;">
                     <div class="img">
                         <img src="/media/chandon.png" alt="chandon">
                     </div>
-
-                    <div class="description">
-                        <h4>Chandon + 2 speeds</h4>
-                        <p>$3700</p>
+                    <div class="card-body">
+                        <h4>Combo <br> Chandon</h4>
+                        <p>$3,700.00</p> 
+                      <a href="#" class="btn btn-success">Comprar ticket</a>
                     </div>
-                </div>                 
+                  </div>               
             </div>
         </div>
 
