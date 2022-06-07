@@ -85,9 +85,9 @@ header nav .container-fluid
 
 footer
 {
-    position: sticky !important;
-    bottom: 0 !important;
-    width: 100% !important;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
     background-color: #dc3545 ;
     border: 12px solid #dc3545 ;
     outline: 8px solid #dc3545 ;
@@ -100,8 +100,8 @@ footer p
 }
 footer hr
 {
-    width: 12% !important;
-    color: white !important;
+    width: 12%;
+    color: white;
 }
 
 footer #rrss
@@ -202,11 +202,11 @@ main div table
 
 .info hr, main hr,footer hr, #galeriaDiv hr,section hr
 {
-    position: relative !important;
-    margin: 5px 0px 5px 0px !important;
-    left: 44% !important;
-    width: 12.5% !important;
-    align-self: center !important;
+    position: relative;
+    margin: 5px 0px 5px 0px;
+    left: 44%;
+    width: 12.5%;
+    align-self: center;
 }
 
 .table
@@ -257,11 +257,11 @@ iframe
 
 .bebida
 {
-    width: 100% !important; 
-    outline: 20px solid transparent !important;
-    height: max-content !important;
-    margin-bottom: 2% !important;
-    padding-bottom: 2% !important;
+    width: 100%; 
+    outline: 20px solid transparent;
+    height: max-content;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
 }
 
 .bebida hr
@@ -272,104 +272,106 @@ iframe
 
 #nacional 
 {
-    margin-bottom: 1.3% !important;
-    border-color: aquamarine !important;
-    background-color: aquamarine !important;
-    outline-color: solid aquamarine !important;
+    margin-bottom: 1.3%;
+    border-color: aquamarine;
+    background-color: aquamarine;
+    outline-color: solid aquamarine;
 }
 
 #importada
 {
-    border-color: gold !important;
-    background-color: gold !important;
-    outline: 20px solid gold !important;
+    border-color: gold;
+    background-color: gold;
+    outline: 20px solid gold;
 }
 
 #cerveza
 {
-    border-color: goldenrod !important;
-    background-color: goldenrod !important;
-    outline: 20px solid goldenrod !important;
+    border-color: goldenrod;
+    background-color: goldenrod;
+    outline: 20px solid goldenrod;
 }
 
 #combos
 {
-    border-color: purple !important;
-    background-color: purple !important;
-    outline: 20px solid purple !important;
-    margin-bottom: 1% !important;
+    border-color: purple;
+    background-color: purple;
+    outline: 20px solid purple;
+    margin-bottom: 1%;
 }
 
 #combos h2
 {
-    color: gold !important;
+    color: gold;
 }
 
 #combos hr
 {
-    background-color: gold !important;
-    border-color: gold !important;
+    background-color: gold;
+    border-color: gold;
 }
 
 .bebida h2
 {
-    text-align: center !important;
+    text-align: center;
 }
 
 .bebida hr
 {
-    width: 20% !important;
-    margin-bottom: 2% !important;
+    width: 20%;
+    margin-bottom: 2%;
 }
 
 .bebida .gallery
 {
-    display: flex !important;
-    flex-flow: row wrap !important;
-    justify-content: space-around !important;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .bebida .gallery .card
 {
-    z-index: 998 !important;
-    min-width: 105px !important;
-    box-sizing: border-box !important;
-    border: 5px solid white !important;
-    border-radius: 10px !important;
-    width: fit-content !important;
-    box-shadow: 1px -1px 25px rgba(255, 255, 255, 0.75) !important;
-    transition: all 500ms !important;
-    background-color: white !important;
+    /* z-index: 0; */
+    min-width: 105px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 6px;
+    width: fit-content;
+    box-shadow: 1px -1px 25px rgba(255, 255, 255, 0.75);
+    transition: all 500ms;
+    background-color: white;
 }
 
 .bebida .gallery .card .img
 {
-    text-align: center !important;    
-    max-width: 100px !important;
-    max-height: 125px !important;
+    text-align: center;    
+    max-width: 100px;
+    max-height: 125px;
 }
 
 .bebida .gallery .card .img img
 {
-    justify-self: center !important;
-    max-width: 100px !important; 
-    max-height: 125px !important;
-    position: relative !important;
-    z-index: 0 !important;
+    justify-self: center;
+    max-width: 100px; 
+    max-height: 125px;
+    position: relative;
+    left: 30%x;
+    z-index: 0;
 }
 
 .bebida .gallery .card .description
 {
-    background-color: white !important;
-    height: 38% !important;
-    width: 100% !important;
-    border: 2px solid white !important;
+    background-color: white;
+    height: 38%;
+    width: 100%;
+    border: 2px solid white;
 }
 
 .bebida .gallery .card .description p
 {
-    text-align: end !important;
-    font-size: medium !important;
+    text-align: end;
+    font-size: medium;
 }
 
 /*Contacto css*/
@@ -490,30 +492,29 @@ input[type=checkbox]:checked + label {
 
 #footerContacto
 {
-    position: fixed !important;
-    bottom: 0% !important;
+    position: fixed;
+    bottom: 0%;
 }
 
 #contacto
 {
-    position: relative !important;
-    top: 40% !important;
-    left: 0% !important;
-    display: flex !important;
-    place-items: center center !important;
+    position: relative;
+    top: 40%;
+    left: 0%;
+    display: flex;
+    place-items: center center;
 }
 
 /* efectos */
 .gallery .card:hover{
         transform: scale(1.2);
-        z-index: 999;
 }
 
 @media (height < 960px)
 {
     .col-xs-12 .btn-lrg
     {
-        margin-bottom: 100px !important;
+        margin-bottom: 100px;
     }
 }
 
@@ -528,7 +529,7 @@ input[type=checkbox]:checked + label {
     header
     {
         flex-direction: column;
-        position: sticky !important ; 
+        position: sticky; 
     }
 
     header .head{
@@ -551,8 +552,8 @@ input[type=checkbox]:checked + label {
     header .head #sub
     {
         position: absolute;
-        top: -5px;
-        left: 85px;
+        top: -10px;
+        left: 90px;
         font-size: smaller;
         width: max-content;
         color: #ffe9e1;
@@ -599,23 +600,23 @@ input[type=checkbox]:checked + label {
 
     #nacional
     {
-        margin-bottom: 5% !important;
+        margin-bottom: 5%;
     }
 
     #combos
     {
-        margin-bottom: 2% !important;
+        margin-bottom: 2%;
     }
 
     .bebida
     {
-        margin-bottom: 10% !important;
+        margin-bottom: 10%;
     }
 
     footer
     {
-        position: sticky !important;
-        bottom: 0 !important;
+        position: sticky;
+        bottom: 0;
     }
 
     footer p
@@ -630,22 +631,60 @@ input[type=checkbox]:checked + label {
 }
 
 
-@media (width > 430px) and (width < 991px) 
+@media (width > 365px) and (width < 991px) 
 {
     .bebida
     {
-        margin-bottom: 4.7% !important;
+        margin-bottom: 4.7%;
 
 
     }
 
     #nacional
     {
-        margin-bottom: 2.5% !important;
+        margin-bottom: 2.5%;
     }
 
     footer #rrss
     {
         left: 44%;
+    }
+    .gallery .card:hover{
+        transform: scale(1.05);
+    }
+
+    header .head #sub
+    {
+        position: absolute;
+        top: -10px;
+        left: 105px;
+        font-size: smaller;
+        width: max-content;
+        color: #ffe9e1;
+    }
+
+    footer
+    {
+        position: sticky;
+        bottom: 0;
+    }
+
+    footer p
+    {
+        font-size: small;
+    }
+    
+    footer #rrss
+    {
+        left: 37%;
+    }
+}
+
+@media (max-width : 390px)
+{
+    header .head #sub
+    {
+        font-size: x-small;
+        left: 100px;
     }
 }
