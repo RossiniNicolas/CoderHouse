@@ -1,0 +1,162 @@
+.bebida
+{
+    width: 100%; 
+    outline: 20px solid transparent;
+    height: max-content;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+
+    h2
+    {
+        text-align: center;
+    }
+   
+    hr
+    {
+        position: relative;
+        left: 40%;
+        width: 20%;
+        margin-bottom: 2%;
+    }
+
+    .gallery
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .card
+        {
+            /* z-index: 0; */
+            min-width: 105px;
+            box-sizing: border-box;
+            border: 5px solid white;
+            border-radius: 10px;
+            margin: 6px;
+            width: fit-content;
+            box-shadow: 1px -1px 25px rgba(255, 255, 255, 0.75);
+            transition: all 500ms;
+            background-color: white;
+            
+            &:hover
+            {
+                transform: scale(1.2);
+            }
+
+            .img
+            {
+                text-align: center;    
+                max-width: 100px;
+                max-height: 125px;
+
+                img
+                {
+                    justify-self: center;
+                    max-width: 100px; 
+                    max-height: 125px;
+                    position: relative;
+                    left: 30%x;
+                    z-index: 0;
+                }
+            }
+
+            .description
+            {
+                background-color: white;
+                height: 38%;
+                width: 100%;
+                border: 2px solid white;
+
+                p
+                {
+                    text-align: end;
+                    font-size: medium;
+                }
+            }
+        }
+    }
+}
+
+#nacional 
+{
+    margin-bottom: 1.3%;
+    border-color: aquamarine;
+    background-color: aquamarine;
+    outline-color: solid aquamarine;
+}
+
+#importada
+{
+    border-color: gold;
+    background-color: gold;
+    outline: 20px solid gold;
+}
+
+#cerveza
+{
+    border-color: goldenrod;
+    background-color: goldenrod;
+    outline: 20px solid goldenrod;
+}
+
+#combos
+{
+    border-color: purple;
+    background-color: purple;
+    outline: 20px solid purple;
+    margin-bottom: 1%;
+    h2
+    {
+        color: gold;
+    }
+
+    hr
+    {
+        background-color: gold;
+        border-color: gold;
+    }
+}
+
+@media (max-width : 991px)
+{    
+
+    #nacional
+    {
+        margin-bottom: 5%;
+    }
+
+    #combos
+    {
+        margin-bottom: 2%;
+    }
+
+    .bebida
+    {
+        margin-bottom: 10%;
+    }
+}
+
+
+@media (width > 365px) and (width < 991px) 
+{
+    .bebida
+    {
+        margin-bottom: 4.7%;
+
+        .gallery 
+        {
+            .card
+            {
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    #nacional
+    {
+        margin-bottom: 2.5%;
+    }
+}

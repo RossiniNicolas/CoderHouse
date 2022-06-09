@@ -1,0 +1,129 @@
+
+header
+{
+    margin: 0%;
+    background-color: transparent;
+    border: 12px 12px 0 12px solid #dc3545;
+    width: 100%;
+    outline: 8px solid transparent;
+    position: sticky;
+    flex-wrap: nowrap;
+    top: 0px;
+    z-index: 999;
+
+    .head
+    {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 5%;
+
+        #logo 
+        {
+            max-width: 150px;
+            position: absolute;
+            left: -60px;
+            top: -20px;
+        }
+
+        #sub
+        {
+            position: absolute;
+            top: -7px;
+            left: 85px;
+            font-size: smaller;
+            width: max-content;
+            color: #ffe9e1;
+        }     
+    }
+
+    nav 
+    {
+        .container-fluid
+        {
+            position: relative;
+            left: 80%;
+        }
+    }
+
+    .nav-link
+    {
+        &:hover 
+        {        
+            color: white;
+        }
+    }
+}
+
+@media (max-width : 991px)
+{
+header
+{
+    flex-direction: column;
+    position: sticky; 
+
+    .head
+    {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 9%;
+        top: 0px;
+
+        #logo 
+        {
+            max-width: 150px;
+            position: absolute;
+            left: -40px;        
+        }
+
+        #sub
+        {
+            position: absolute;
+            top: -10px;
+            left: 90px;
+            font-size: smaller;
+            width: max-content;
+            color: #ffe9e1;
+        }
+    }
+}
+}
+
+@media (width > 365px) and (width < 991px) 
+{
+    header 
+    {    
+        .head
+        {
+            #sub
+            {
+                position: absolute;
+                top: -10px;
+                left: 105px;
+                font-size: smaller;
+                width: max-content;
+                color: #ffe9e1;
+            }
+        }
+    }
+}
+
+@media (max-width : 390px)
+{
+    header
+    {
+        .head
+        { 
+            #sub
+            {
+                font-size: x-small;
+                left: 100px;
+            }
+        }
+    }
+}

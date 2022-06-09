@@ -1,0 +1,42 @@
+header {
+  margin: 0%;
+  background-color: transparent;
+  border: 12px 12px 0 12px solid #dc3545;
+  width: 100%;
+  outline: 8px solid transparent;
+  position: sticky;
+  flex-wrap: nowrap;
+  top: 0px;
+  z-index: 999;
+}
+header .head {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 5%;
+}
+header .head #logo {
+  max-width: 150px;
+  position: absolute;
+  left: -60px;
+  top: -20px;
+}
+header .head #sub {
+  position: absolute;
+  top: -7px;
+  left: 85px;
+  font-size: smaller;
+  width: max-content;
+  color: #ffe9e1;
+}
+header nav .container-fluid {
+  position: relative;
+  left: 80%;
+}
+header .nav-link:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

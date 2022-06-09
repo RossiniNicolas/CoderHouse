@@ -1,0 +1,23 @@
+@import "./base/header";
+@import "./base/footer";
+
+@import "./components/index";
+@import "./components/bebida";
+@import "./components/contacto";
+
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    *
+    {
+        font-family:Calibri;
+    }
+
+    @media (max-width : 991px)
+    {
+        height: fit-content;
+    }
+}
