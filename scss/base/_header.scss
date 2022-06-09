@@ -3,7 +3,7 @@ header
 {
     margin: 0%;
     background-color: transparent;
-    border: 12px 12px 0 12px solid #dc3545;
+    border: 12px 12px 0 12px solid var(--background-color);
     width: 100%;
     outline: 8px solid transparent;
     position: sticky;

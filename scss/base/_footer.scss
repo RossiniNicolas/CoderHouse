@@ -4,9 +4,9 @@ footer
     position: sticky;
     bottom: 0;
     width: 100%;
-    background-color: #dc3545 ;
-    border: 12px solid #dc3545 ;
-    outline: 8px solid #dc3545 ;
+    background-color: var(--background-color);
+    border: 12px solid var(--background-color);
+    outline: 8px solid var(--background-color);
     color: white;
     z-index: 999;
     p
