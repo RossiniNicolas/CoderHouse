@@ -1,7 +1,5 @@
-:root
-{
-    --background-color : #dc3545;    
-}
+$principalColor : #dc3545;    
+$contactoInputColor : #da5c68;
 
 @import "./base/header";
 @import "./base/footer";

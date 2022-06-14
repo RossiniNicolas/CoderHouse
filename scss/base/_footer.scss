@@ -4,9 +4,9 @@ footer
     position: sticky;
     bottom: 0;
     width: 100%;
-    background-color: var(--background-color);
-    border: 12px solid var(--background-color);
-    outline: 8px solid var(--background-color);
+    background-color: $principalColor;
+    border: 12px solid $principalColor;
+    outline: 8px solid $principalColor;
     color: white;
     z-index: 999;
     p
@@ -50,9 +50,9 @@ footer
     position: sticky;
     bottom: 0%;
     width: 100%;
-    background-color: var(--background-color);
-    border: 12px solid var(--background-color);
-    outline: 8px solid var(--background-color);
+    background-color: $principalColor;
+    border: 12px solid $principalColor;
+    outline: 8px solid $principalColor;
     color: white;
     z-index: 999;
     p
