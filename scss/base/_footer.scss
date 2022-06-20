@@ -111,7 +111,7 @@ footer
     }
 }
 
-@media (width > 365px) and (width < 991px) 
+@media (min-width : 365px) and (max-width : 991px) 
 {
     footer
     {

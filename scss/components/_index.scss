@@ -1,11 +1,16 @@
+@mixin CenterContent
+{
+    place-content: center;
+    position: relative;
+}
+
 main
 {
     .intro
     {
-        place-content: center;
+        @include CenterContent();
         padding: 0;
         display: flex;
-        position: relative;
         width: 110%;
         height: 550px;
         background-image: url(/media/background.webp);
@@ -60,7 +65,7 @@ main
 
 section
 {
-    place-items: center;
+    @include CenterContent();
     max-width: 100%;
     overflow-x: hidden;
 
@@ -72,7 +77,7 @@ section
 
 .info
 {
-    text-align: center;
+
     width: 100%;
 
     div 

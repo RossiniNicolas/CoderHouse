@@ -1,0 +1,10 @@
+$nombreClases :  "logo" -60px -20px, "sub" 85px -7px;
+
+@each $nombreClase, $left, $top in $nombreClases {
+    .#{$nombreClase}
+    {
+        position: absolute;
+        left: left;
+        top: top;
+    }
+}
