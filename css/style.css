@@ -214,6 +214,8 @@ main div {
   text-align: center;
   max-width: 100%;
   overflow-x: hidden;
+  display: grid;
+  place-items: center center;
 }
 main div table {
   width: 30%;
@@ -226,7 +228,7 @@ main div table {
 }
 main div .table {
   position: relative;
-  left: 20%;
+  left: 0%;
   width: 50%;
 }
 
@@ -242,6 +244,7 @@ section h2 {
 
 .info {
   width: 100%;
+  text-align: center;
 }
 .info div {
   position: relative;
@@ -292,10 +295,6 @@ iframe {
     font-weight: bolder;
     color: white;
     transition: all 500ms;
-  }
-  main div table {
-    position: relative;
-    left: 15%;
   }
   .list-group a {
     width: 90px;
